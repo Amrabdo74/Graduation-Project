@@ -99,7 +99,7 @@ signInSubmit.addEventListener("click", async (ev) => {
     } else {
       //redirect to Home
       console.log("redirected To Home");
-      window.location.href = "../../index.html";
+      window.location.href = "https://amrabdo74.github.io/Graduation-Project/index.html";
     }
     console.log(result);
   } else {
