@@ -95,7 +95,7 @@ signInSubmit.addEventListener("click", async (ev) => {
     if (userType == "admin") {
       //redirect to dashboard
       console.log("redirected to DashBoard");
-      window.location.href = "../../dashboard/index.html";
+      window.location.href = "https://amrabdo74.github.io/Graduation-Project/dashboard/index.html";
     } else {
       //redirect to Home
       console.log("redirected To Home");
