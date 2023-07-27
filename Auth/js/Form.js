@@ -4,6 +4,12 @@ const signUpBtn = document.getElementById("signUp");
 const fistForm = document.getElementById("form1");
 const secondForm = document.getElementById("form2");
 const container = document.querySelector(".container");
+const link2 = document.querySelector(".link2");
+const link3 = document.querySelector(".link3");
+const signupdisplay = document.querySelector(".signupdisplay");
+const signindisplay = document.querySelector(".signindisplay");
+
+
 //input Items
 const nameInput = document.querySelector(".signUpName");
 const emailInput = document.querySelector(".signUpEmail");
@@ -20,7 +26,14 @@ const signInSubmit = document.querySelector(".sign-in-submit");
 const signupStatus = document.querySelector(".feed-status.signup-status");
 const loginStatus = document.querySelector(".feed-status.login-status");
 // ===================================================
-
+link2.addEventListener("click",() => {
+  signupdisplay.style.display = "block";
+  signindisplay.style.display = "none";
+})
+link3.addEventListener("click",() => {
+  signupdisplay.style.display = "none";
+  signindisplay.style.display = "block";
+})
 const clearInput = () => {
   nameInput.value = "";
   emailInput.value = "";
@@ -30,21 +43,21 @@ const clearInput = () => {
   confPassInput.value = "";
 };
 
-signInBtn.addEventListener("click", (ev) => {
-  signupStatus.classList.remove("err");
-  signupStatus.classList.remove("success");
-  loginStatus.classList.remove("err");
-  loginStatus.classList.remove("success");
-  container.classList.remove("right-panel-active");
-});
+// signInBtn.addEventListener("click", (ev) => {
+//   signupStatus.classList.remove("err");
+//   signupStatus.classList.remove("success");
+//   loginStatus.classList.remove("err");
+//   loginStatus.classList.remove("success");
+//   container.classList.remove("right-panel-active");
+// });
 
-signUpBtn.addEventListener("click", (ev) => {
-  signupStatus.classList.remove("err");
-  signupStatus.classList.remove("success");
-  loginStatus.classList.remove("err");
-  loginStatus.classList.remove("success");
-  container.classList.add("right-panel-active");
-});
+// signUpBtn.addEventListener("click", (ev) => {
+//   signupStatus.classList.remove("err");
+//   signupStatus.classList.remove("success");
+//   loginStatus.classList.remove("err");
+//   loginStatus.classList.remove("success");
+//   container.classList.add("right-panel-active");
+// });
 // ===================================================
 signUpSubmit.addEventListener("click", async (ev) => {
   ev.preventDefault();
