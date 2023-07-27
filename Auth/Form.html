@@ -17,13 +17,24 @@
         <img src="./css/arrow-left-solid.svg" style="width: 15px;" alt="">        Back to Home</a>
 
     </div>
+
   <div class="container right-panel-active">
 
-    <div>
-      <img style="width: 120px; z-index: 3000; position: absolute;left: 50%; transform: translateX(-50%); margin-top: 10px;" src="../Home/imgs/images/logo323.png" alt="">
-    </div>
+
+        <!-- Sign In -->
+        <div class="container__form container--signin signindisplay">
+          <form action="/sign-in" method="post" class="form" id="form2">
+            <h2 class="form__title">Sign In</h2>
+            <h2 class="feed-status login-status">Some error Text</h2>
+            <input type="email" placeholder="Email" class="input loginEmail" name="loginEmail" />
+            <input type="password" placeholder="Password" class="input loginPass" name="loginPass" />
+            <a href="./forget.html" class="link">Forgot your password?</a>
+            <span class="link2" style=" cursor: pointer; color: black;">Sign Up</span>
+            <button class="btn sign-in-submit" type="submit">Login</button>
+          </form>
+        </div>
     <!-- Sign Up -->
-    <div class="container__form container--signup">
+    <div class="container__form container--signup signupdisplay " style="margin-top: 90px;">
       <form action="/sign-up" method="post" class="form" id="form1">
         <h2 class="form__title">Sign Up</h2>
         <h2 class="feed-status signup-status">some success or err Text</h2>
@@ -34,33 +45,14 @@
         <input type="password" placeholder="Password" class="input signUpPassword" />
         <input type="password" placeholder="Confirm Password" class="input signUpConfPassword" />
         <button class="btn sign-up-submit" type="submit">Sign Up</button>
+        <span class="link3" style=" cursor: pointer; color: black; margin-top: 20px;">Sign in</span>
+
       </form>
     </div>
 
-    <!-- Sign In -->
-    <div class="container__form container--signin">
-      <form action="/sign-in" method="post" class="form" id="form2">
-        <h2 class="form__title">Sign In</h2>
-        <h2 class="feed-status login-status">Some error Text</h2>
-        <input type="email" placeholder="Email" class="input loginEmail" name="loginEmail" />
-        <input type="password" placeholder="Password" class="input loginPass" name="loginPass" />
-        <a href="./forget.html" class="link">Forgot your password?</a>
-        <button class="btn sign-in-submit" type="submit">Login</button>
-      </form>
-    </div>
 
-    <!-- Overlay -->
-    <div class="container__overlay">
-      <div class="overlay">
-        <div class="overlay__panel overlay--left">
-          <button class="btn" id="signIn">Login</button>
-        </div>
-        <div class="overlay__panel overlay--right">
-          <button class="btn" id="signUp">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+    
   <script src="js/Form.js"></script>
 </body>
 
