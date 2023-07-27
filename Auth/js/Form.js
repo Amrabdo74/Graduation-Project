@@ -43,21 +43,6 @@ const clearInput = () => {
   confPassInput.value = "";
 };
 
-// signInBtn.addEventListener("click", (ev) => {
-//   signupStatus.classList.remove("err");
-//   signupStatus.classList.remove("success");
-//   loginStatus.classList.remove("err");
-//   loginStatus.classList.remove("success");
-//   container.classList.remove("right-panel-active");
-// });
-
-// signUpBtn.addEventListener("click", (ev) => {
-//   signupStatus.classList.remove("err");
-//   signupStatus.classList.remove("success");
-//   loginStatus.classList.remove("err");
-//   loginStatus.classList.remove("success");
-//   container.classList.add("right-panel-active");
-// });
 // ===================================================
 signUpSubmit.addEventListener("click", async (ev) => {
   ev.preventDefault();
